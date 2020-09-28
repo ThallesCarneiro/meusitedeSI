@@ -4,7 +4,7 @@ title:  "Molho Carbonara!"
 date:   2020-09-28 01:19:17 -0300
 categories: jekyll update
 ---
-![MolhoBranco]({{ site.url} }/assets/images/molhocarbonara.jpg)
+![MolhoCarbonara]({{ site.url} }/assets/images/molhocarbonara.jpg)
 
 Ingredientes:
 100 g de bacon em cubos,
