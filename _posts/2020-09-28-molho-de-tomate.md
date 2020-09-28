@@ -4,7 +4,7 @@ title:  "Molho de Tomate Perfeito!"
 date:   2020-09-28 01:19:17 -0300
 categories: jekyll update
 ---
-![MolhodeTomate]({{ site.url }}/assets/images/molhodetomate.jpg)
+![MolhodeTomate]({{site.url}}/assets/images/molhodetomate.jpg)
 
 Ingredientes:
 2 kg de tomate maduro (débora ou italiano) cortado ao meio,sem semente, 
