@@ -1,0 +1,45 @@
+---
+layout : default
+---
+<ul>
+<header id="cabecalho-principal"> 
+<h1>Receitas da Vó do Thalles</h1>
+</header >
+<main>
+    <section class="posts">
+        <article class="article-1">
+            <header>
+                <h1>Receitas de Molho da Vó do Thalles</h1>
+                <img src ="{{'/assets/images/Molho.png'| relative_url }}" height="70%" width="20%">
+            </header>
+            {% for post in site.posts %}
+            <li > <a href ="{{ post.url | relative_url }} }} "> {{ post.title }} </a> </li>
+            {% endfor %}
+            <footer>
+                <p>Para essas receitas, você vai utilizar uma panela.</p>
+            </footer>
+        </article>
+        <article class="article-2">
+            <header>
+                <h1>Sobre a Vó do Thalles</h1>
+            </header>
+            <p>Uma das maiores entusiastas por molhos, a Vó do Thalles é uma das maiores referências quando falamos na culinária italiana. Sendo bastante inventiva, a Vó do Thalles já fez molhos a partir de banana, palmito e batata doce, se recusando várias vezes a usar extrato de tomate pronto.</p>
+            <a href ="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> Click aqui para o Vlog da Vó do Thalles </a>
+            <footer>
+                <p>Escrito pelo Thalles.</p>
+            </footer>
+        </article>
+    </section>
+    <section class="outra">
+        <p>A avó do Thalles não se responsabiliza por receitas que dêem errado ou acidentes causados pela imprudência daqueles que estão cozinhando. </p>
+    </section>
+    <aside id="sidebar" role="complementary">
+        <p>Receitas da Avó do Thalles é um site muito legal sobre receitas de culinária.</p>
+        <img src ="{{'/assets/images/avo.jpeg' | relative_url }}" height="40%" width="70%">
+    </aside>
+</main>
+<footer id="rodape-principal">
+    Todos os direitos reservados a Avó do Thalles
+</footer>
+</ul>
+

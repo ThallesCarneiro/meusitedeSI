@@ -1,0 +1,139 @@
+:root {
+    --primary-color: #000000;
+    --secondary-color: #ffffff;
+    --primary-background: #fbfbfc;
+    --secondary-background: #cf4708;
+    --tertiary-background: #056379;
+    font-family: Apple Chancery, cursive;
+    font-size: 16px;
+    line-height: 1.5em;
+    
+}
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--primary-background);
+    
+}
+
+li, a {
+    color: var(--light);
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header#cabecalho-principal {
+    background: var(--secondary-background);
+    color: var(--primary-color);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: header;
+}
+
+nav#navegacao-principal {
+    background: var(--secondary-background);
+    color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    grid-area: nav;
+}
+
+nav#navegacao-principal ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav#navegacao-principal li {
+    display: inline-block;
+    padding: 10px;
+}
+
+main {
+    align-self: center;
+    width: calc(100% - 60px);
+    display: grid;
+    grid-template-columns: auto 300px;
+    grid-template-areas: "sec1 aside"
+                         "sec2 aside";
+}
+
+.posts {
+    grid-area: sec1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px
+}
+
+article header p {
+    font-size: 12px;
+}
+
+article footer {
+    color: gray;
+}
+
+article img {
+    width: 160px;
+    justify-self: center;
+}
+
+.outra {
+    grid-area: sec2;
+}
+
+.outra p {
+    padding-left: 30px;
+}
+
+aside {
+    margin: 50px 30px;
+    height: 80%;
+    border: 15px  solid var(--secondary-background);
+    background-color: var(--tertiary-background);
+    color: var(--secondary-color);
+    grid-area: aside;
+}
+
+aside p {
+    padding: 30px;
+}
+
+footer#rodape-principal {
+    margin-top: 30px;
+    background: var(--secondary-background);
+    color: var(--primary-color);
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+    main {
+        grid-template-columns: auto;
+        grid-template-areas: "sec1" "sec2" "aside";
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .posts {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
