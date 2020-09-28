@@ -4,7 +4,7 @@ title:  "Molho Branco Fantástico!"
 date:   2020-09-28 01:19:17 -0300
 categories: jekyll update
 ---
-![MolhoBranco]({{ site.url }}/assets/images/molhobranco.jpg)
+<img src="https://thallescarneiro.github.io/meusitedeSI/assets/images/molhobranco.jpg")>
 
 Ingredientes:
 2 xícaras de leite frio,

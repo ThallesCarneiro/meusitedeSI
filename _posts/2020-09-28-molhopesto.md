@@ -4,7 +4,7 @@ title:  "Molho Carbonara!"
 date:   2020-09-28 01:19:17 -0300
 categories: jekyll update
 ---
-![MolhoPesto]({{ site.url }}/assets/images/molhocarpesto.jpg)
+<img src="https://thallescarneiro.github.io/meusitedeSI/assets/images/molhopesto.jpg")>
 
 Ingredientes:
 4 dentes de alho,
